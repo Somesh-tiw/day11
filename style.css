@@ -73,15 +73,18 @@
 }
 .input1{
     
-    width: auto;
-    padding-block: 20px;
-    height: 30px;
+    width: 500px;
+    /* padding-block: 10px; */
+    height: 40px;
     /* background-color: blue; */
     display: flex;
     align-items: center;
-    padding-inline: 30PX;
-    border: 1px solid;
+    justify-content: start;
+  
+    padding-inline: 30px;
+    border: 1px solid black;
     border-radius: 20px;
+
 }
 .input1 input{
     
@@ -89,13 +92,16 @@
     height: 30px;
     background: transparent;
     border: none;
-    padding-inline: 18px;
+    /* margin-bottom: 50px; */
+    /* padding-inline: 18px; */
     
 }
 input:focus{
     outline: none;
 }
 .para{
+    width: 100%;
+    height: auto;
     display: flex;
     /* border: 1px solid; */
     align-items: center;
@@ -115,9 +121,9 @@ input:focus{
     
 }
 .plan_section{
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 95%;
+    padding-inline: 50px;
+    padding-block: 30px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -180,4 +186,78 @@ input:focus{
     height: 25px;
     padding: 5px;
     margin-right: 50px;
+    display: flex;
+}
+
+
+
+ @media (max-width:768px) { 
+   .nav_container{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+   }
+   .right{
+    width: 100%;
+
+   }
+   .right button:first-child{
+    /* display: none; */
+    visibility: hidden;
+   }
+   .right button:nth-child(2){
+    /* display: none; */
+    visibility: hidden;
+   }
+   .parent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 20px;
+   }
+   .cart{
+    margin-top: 20px;
+   }
+   .hero_section{
+    width: 100%;
+    height: auto;
+    padding-inline: 20px;
+   }
+   .input1{
+    width: 100%;
+    /* height: auto; */
+    margin-bottom: 50px;
+  
+   }
+   .input1 input{
+    width: 100%;
+    /* margin-bottom: 50px; */
+
+   }
+   .para{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    /* padding-block: 20px; */
+   }
+   .para button{
+    margin-top: 20px;
+   }
+   .plan_section{
+    flex-direction: column;
+    align-items: center;
+   }
+   .footer{
+    flex-direction: column;
+    align-items: center;
+   }
+   .footer1{
+    flex-direction: column;
+    align-items: center;
+   }
+   .icon_section1{
+    display: flex;
+   }
+  
+   
 }
